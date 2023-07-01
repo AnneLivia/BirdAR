@@ -1,4 +1,3 @@
-import './app.css';
 import birdPoster from './assets/images/bird_model.webp';
 import birdModel from './assets/object/bird_orange.glb';
 
