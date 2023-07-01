@@ -28,7 +28,24 @@ const ModelViewer = ({ model3D, modelPoster }) => {
         autoplay
         ref={modelViewerRef}
         loading='eager'
-      ></model-viewer>
+      >
+        <Button
+          slot='ar-button'
+          className='arButtom justify-content-center'
+          variant='warning'
+        >
+          <TbBrandUnity className='mb-1 me-1' size={20} /> View in your space
+        </Button>
+        <ProgressBar
+          slot='progress-bar'
+          className='hide'
+          variant='warning'
+          now={progressValue}
+          ref={progressBarRef}
+          visuallyHidden
+          striped
+        />
+      </model-viewer>
     </div>
   );
 };
