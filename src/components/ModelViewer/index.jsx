@@ -21,7 +21,7 @@ const ModelViewer = ({ model3D, modelPoster }) => {
         src={model3D}
         poster={modelPoster}
         ar
-        ar-modes='scene-viewer quick-look'
+        ar-modes='webxr scene-viewer quick-look'
         camera-controls
         shadow-intensity='1'
         ar-placement='floor'
